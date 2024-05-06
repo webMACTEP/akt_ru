@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header {
+  padding: 16px 24px;
+}
+.header .saga {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header .saga .per-arrow,
+.header .saga .ring,
+.header .saga .add {
+  cursor: pointer;
+}
+.header .saga .avatar {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.header .saga .avatar img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .saga .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .saga .info .per-email {
+  color: rgb(102, 112, 133);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.header .saga .info .per-name {
+  color: rgb(16, 24, 40);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+.header .saga .person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header .sola {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header .sola .logo-client {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.header .sola .logo-client img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
+.header .sola .client-db {
+  display: flex;
+  gap: 12px;
+}
+.header .sola .vline {
+  width: 40px;
+  height: 1px;
+  transform: rotate(-90deg);
+  background: rgb(234, 236, 240);
+}
+.header .sola .info {
+  display: flex;
+  flex-direction: column;
+}
+.header .sola .info .lk-link {
+  color: rgb(102, 112, 133);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.header .sola .info .title {
+  color: rgb(16, 24, 40);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
