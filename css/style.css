@@ -79,8 +79,16 @@ body {
   font-style: normal;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .header {
   padding: 16px 24px;
+  border-bottom: 1px solid rgb(234, 236, 240);
+  background: rgb(255, 255, 255);
 }
 .header .saga {
   display: flex;
@@ -108,7 +116,7 @@ body {
 .header .saga .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .header .saga .info .per-email {
   color: rgb(102, 112, 133);
@@ -178,4 +186,131 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100%;
+  width: 260px;
+  padding: 24px;
+  border-right: 1px solid rgb(234, 236, 240);
+  background: rgb(255, 255, 255);
+}
+.sidebar .navigation-bottom {
+  padding: 16px;
+  border: 1px solid rgb(234, 236, 240);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sidebar .navigation-bottom .change {
+  margin: 8px 0px 0px 0px;
+  cursor: pointer;
+  color: rgb(21, 112, 239);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.sidebar .navigation-bottom .info {
+  color: rgb(152, 162, 179);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.sidebar .navigation-bottom .title {
+  color: rgb(16, 24, 40);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.sidebar .progress-bar {
+  width: 100%; /* Ширина полоски прогресса */
+  height: 8px; /* Высота полоски прогресса */
+  background-color: rgb(242, 244, 247);
+  border-radius: 10px; /* Закругленные углы */
+}
+.sidebar .progress {
+  height: 100%;
+  background-color: rgb(253, 176, 34); /* Цвет заполнения */
+  border-radius: 10px; /* Закругленные углы */
+  width: 50%; /* Измените эту ширину, чтобы указать прогресс */
+}
+.sidebar .navigation-second {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 0px;
+}
+.sidebar .navigation-second .butt {
+  cursor: pointer;
+  color: rgb(102, 112, 133);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  padding: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.sidebar .navigation-second .butt:hover, .sidebar .navigation-second .butt.active {
+  color: rgb(21, 112, 239);
+  background: rgb(239, 248, 255);
+  border: 1px solid rgb(239, 248, 255);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.sidebar .navigation-second .butt:hover svg path, .sidebar .navigation-second .butt.active svg path {
+  stroke: rgb(21, 112, 239);
+}
+.sidebar .navigation-second .butt svg path {
+  stroke: rgb(102, 112, 133);
+}
+.sidebar .navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sidebar .butt-create {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 30px 12px 12px;
+  border: 1px solid rgb(21, 112, 239);
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  background: rgb(21, 112, 239);
+}
+.sidebar .butt-base {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgb(249, 250, 251);
+}
+
+.content {
+  background: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */
