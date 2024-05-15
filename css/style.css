@@ -518,6 +518,9 @@ main {
   cursor: default;
   color: var(--Gray-200, #eaecf0);
 }
+.day.empty:hover {
+  background: #fff;
+}
 
 .day.selected {
   background: var(--Blue-50, #eff8ff);
