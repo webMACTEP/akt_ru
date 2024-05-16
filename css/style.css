@@ -475,7 +475,7 @@ main {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -492,11 +492,11 @@ main {
   cursor: pointer;
 }
 .calendar-wrapp .info .meeting-form .create-meeting {
-  background-color: #007bff;
+  background-color: #1570EF;
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   margin: 0px 0px 16px 0px;
 }
