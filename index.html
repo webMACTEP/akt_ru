@@ -723,6 +723,44 @@
                   <li>20:00 - 21:00</li>
                 </ul>
               </section>
+              <section class="s03 ">
+                <div class="title">Создать встречу</div>
+                <div class="subtitle">9 февраля, 15:00 - 16:00 (UTC+3)</div>
+                <form class="meeting-form">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Иван" />
+
+                  <label for="participants">Участники встречи</label>
+                  <input
+                    type="email"
+                    id="participants"
+                    name="participants"
+                    placeholder="example@gmail.com"
+                  />
+                  <input
+                    type="email"
+                    id="participants"
+                    name="participants"
+                    placeholder="example@gmail.com"
+                  />
+
+                  <button type="button" class="add-guests">
+                    Добавить гостей
+                  </button>
+
+                  <label for="description">Описание встречи</label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    placeholder="Пожалуйста, поделитесь всем, что поможет подготовиться к нашей встрече."
+                  ></textarea>
+
+                  <button type="submit" class="create-meeting">
+                    Создать встречу
+                  </button>
+                </form>
+                <div class="change-time">Изменить время</div>
+              </section>
             </div>
           </div>
         </div>
@@ -732,19 +770,27 @@
     <script>
       document.querySelectorAll(".day").forEach((item) => {
         item.addEventListener("click", (event) => {
-          // Находим элементы с классами s01 и s02
           const s01 = document.querySelector(".s01");
           const s02 = document.querySelector(".s02");
 
-          // Проверяем, что элементы существуют
           if (s01 && s02) {
-            // Убираем класс active у s01
             s01.classList.remove("active");
-            // Добавляем класс active к s02
             s02.classList.add("active");
           }
         });
       });
+
+      const s02 = document.querySelector(".s02");
+      if (s02) {
+        s02.addEventListener("click", (event) => {
+          const s03 = document.querySelector(".s03");
+
+          if (s02 && s03) {
+            s02.classList.remove("active");
+            s03.classList.add("active");
+          }
+        });
+      }
     </script>
   </body>
 </html>

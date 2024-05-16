@@ -459,6 +459,50 @@ main {
   padding: 40px;
   border-left: 1px solid var(--Gray-200, #eaecf0);
 }
+.calendar-wrapp .info .meeting-form {
+  background-color: white;
+  margin: 40px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.calendar-wrapp .info .meeting-form label {
+  margin-bottom: 5px;
+  color: #333;
+}
+.calendar-wrapp .info .meeting-form input,
+.calendar-wrapp .info .meeting-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.calendar-wrapp .info .change-time,
+.calendar-wrapp .info .meeting-form .add-guests {
+  text-align: center;
+  font-weight: 600;
+  margin: 0px 0px 16px 0px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #D0D5DD);
+  background: var(--White, #FFF);
+  padding: 10px 16px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  cursor: pointer;
+}
+.calendar-wrapp .info .meeting-form .create-meeting {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 0px 16px 0px;
+}
+.calendar-wrapp .info .meeting-form .create-meeting:hover {
+  background-color: #0056b3;
+}
 .calendar-wrapp .info section {
   display: none;
 }
