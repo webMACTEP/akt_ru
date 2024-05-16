@@ -455,30 +455,65 @@ main {
   line-height: 38px; /* 126.667% */
 }
 .calendar-wrapp .info {
-  max-width: 354px;
+  width: 492px;
   padding: 40px;
   border-left: 1px solid var(--Gray-200, #eaecf0);
 }
-.calendar-wrapp .info .s01 {
-  text-align: center;
+.calendar-wrapp .info section {
+  display: none;
 }
-.calendar-wrapp .info .s01 p {
+.calendar-wrapp .info section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 40px 0px 0px 0px;
+}
+.calendar-wrapp .info section ul li {
+  cursor: pointer;
+  padding: 10px 16px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #d0d5dd);
+  background: var(--White, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.calendar-wrapp .info section ul li.active {
+  color: #fff;
+  border: 1px solid var(--Blue-600, #1570ef);
+  background: var(--Blue-600, #1570ef);
+}
+.calendar-wrapp .info section p {
   color: var(--Gray-500, #667085);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-.calendar-wrapp .info .s01 .title {
+.calendar-wrapp .info section .subtitle {
+  color: var(--Gray-400, #98a2b3);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.calendar-wrapp .info section .title {
   color: var(--Gray-700, #344054);
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 150% */
+}
+.calendar-wrapp .info section .img {
+  margin: 0px 0px 40px 0px;
+}
+.calendar-wrapp .info section.s01 {
+  text-align: center;
+}
+.calendar-wrapp .info section.s01 .title {
   margin: 0px 0px 16px 0px;
 }
-.calendar-wrapp .info .s01 .img {
-  margin: 0px 0px 40px 0px;
+.calendar-wrapp .info section.active {
+  display: block;
 }
 
 .calendar {
@@ -487,8 +522,7 @@ main {
   gap: 0px;
   width: 100%;
 }
-
-.day-name {
+.calendar .day-name {
   color: var(--Gray-400, #98a2b3);
   text-align: center;
   font-size: 12px;
@@ -497,8 +531,7 @@ main {
   line-height: 18px; /* 150% */
   padding: 10px;
 }
-
-.day {
+.calendar .day {
   margin-left: -1px;
   margin-top: -1px;
   font-size: 24px;
@@ -513,21 +546,18 @@ main {
   cursor: pointer;
   position: relative;
 }
-
-.day.empty {
+.calendar .day.empty {
   cursor: default;
   color: var(--Gray-200, #eaecf0);
 }
-.day.empty:hover {
+.calendar .day.empty:hover {
   background: #fff;
 }
-
-.day.selected {
+.calendar .day.selected {
   background: var(--Blue-50, #eff8ff);
   color: var(--Blue-800, #1849a9);
 }
-
-.day.selected::after {
+.calendar .day.selected::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -538,8 +568,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.day.selected::before {
+.calendar .day.selected::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -550,7 +579,6 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.day:hover {
+.calendar .day:hover {
   background: var(--Blue-100, #d1e9ff);
 }/*# sourceMappingURL=style.css.map */
