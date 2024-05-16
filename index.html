@@ -684,7 +684,7 @@
               </div>
             </div>
             <div class="info">
-              <section class="s01 ">
+              <section class="s01 active">
                 <div class="img">
                   <svg
                     width="56"
@@ -709,7 +709,7 @@
                   временной слот
                 </p>
               </section>
-              <section class="s02 active">
+              <section class="s02">
                 <div class="title">Выберите время</div>
                 <div class="subtitle">60 минут</div>
                 <ul>
@@ -729,5 +729,22 @@
       </div>
       <footer class="footer"></footer>
     </main>
+    <script>
+      document.querySelectorAll(".day").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          // Находим элементы с классами s01 и s02
+          const s01 = document.querySelector(".s01");
+          const s02 = document.querySelector(".s02");
+
+          // Проверяем, что элементы существуют
+          if (s01 && s02) {
+            // Убираем класс active у s01
+            s01.classList.remove("active");
+            // Добавляем класс active к s02
+            s02.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
