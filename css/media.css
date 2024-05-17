@@ -4,6 +4,54 @@
   }
 }
 @media (max-width: 789px) {
+  .calendar-wrapp .info {
+    padding: 0px 0px 0px 0px;
+  }
+  .footer-nav {
+    padding: 16px;
+    border-top: 1px solid var(--Gray-200, #eaecf0);
+    background: var(--White, #fff);
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+    display: block;
+  }
+  .footer-nav .butt-left {
+    color: var(--Gray-700, #344054);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+    border-radius: 8px;
+    border: 1px solid var(--Gray-300, #d0d5dd);
+    background: var(--White, #fff);
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 10px 16px;
+  }
+  .footer-nav .butt-right {
+    border-radius: 8px;
+    border: 1px solid var(--Blue-600, #1570ef);
+    background: var(--Blue-600, #1570ef);
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 10px 16px;
+    color: var(--White, #fff);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+  }
+  .footer-nav section {
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    display: none;
+  }
+  .footer-nav section.active {
+    display: flex;
+  }
+  .calendar .day {
+    font-size: 16px;
+  }
   .header .sola .burger {
     display: block;
   }

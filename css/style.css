@@ -191,6 +191,10 @@ main {
   justify-content: space-between;
 }
 
+.footer-nav {
+  display: none;
+}
+
 .wrapper {
   flex-grow: 1;
   display: flex;
