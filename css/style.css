@@ -404,7 +404,7 @@ main {
   width: 100%;
 }
 .calendar-wrapp .c-body .mob {
-  color: var(--Gray-900, #101828);
+  color: #101828;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -421,8 +421,8 @@ main {
 .calendar-wrapp .navigation .butt-utc {
   height: 40px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #d0d5dd);
-  background: var(--White, #fff);
+  border: 1px solid #d0d5dd;
+  background: #fff;
   /* Shadow/xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   display: flex;
@@ -439,7 +439,7 @@ main {
 }
 .calendar-wrapp .navigation .nav .butt-today {
   cursor: pointer;
-  color: var(--White, #fff);
+  color: #fff;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -449,8 +449,8 @@ main {
   height: 40px;
   padding: 0px 16px;
   border-radius: 8px;
-  border: 1px solid var(--Blue-600, #1570ef);
-  background: var(--Blue-600, #1570ef);
+  border: 1px solid #1570ef;
+  background: #1570ef;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 .calendar-wrapp .navigation .nav .butt {
@@ -458,8 +458,8 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #d0d5dd);
-  background: var(--White, #fff);
+  border: 1px solid #d0d5dd;
+  background: #fff;
   /* Shadow/xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   display: flex;
@@ -467,7 +467,7 @@ main {
   justify-content: center;
 }
 .calendar-wrapp .navigation .nav h3 {
-  color: var(--Gray-900, #101828);
+  color: #101828;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -476,7 +476,7 @@ main {
 .calendar-wrapp .info {
   max-width: 350px;
   padding: 40px;
-  border-left: 1px solid var(--Gray-200, #eaecf0);
+  border-left: 1px solid #eaecf0;
 }
 .calendar-wrapp .info .meeting-form {
   background-color: white;
@@ -505,8 +505,8 @@ main {
   min-width: 260px;
   margin: 0px 0px 16px 0px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #d0d5dd);
-  background: var(--White, #fff);
+  border: 1px solid #d0d5dd;
+  background: #fff;
   padding: 10px 16px;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   cursor: pointer;
@@ -538,31 +538,31 @@ main {
   padding: 10px 16px;
   text-align: center;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #d0d5dd);
-  background: var(--White, #fff);
+  border: 1px solid #d0d5dd;
+  background: #fff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 .calendar-wrapp .info section ul li.active {
   color: #fff;
-  border: 1px solid var(--Blue-600, #1570ef);
-  background: var(--Blue-600, #1570ef);
+  border: 1px solid #1570ef;
+  background: #1570ef;
 }
 .calendar-wrapp .info section p {
-  color: var(--Gray-500, #667085);
+  color: #667085;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
 .calendar-wrapp .info section .subtitle {
-  color: var(--Gray-400, #98a2b3);
+  color: #98a2b3;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
 }
 .calendar-wrapp .info section .title {
-  color: var(--Gray-700, #344054);
+  color: #344054;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -588,7 +588,7 @@ main {
   width: 100%;
 }
 .calendar .day-name {
-  color: var(--Gray-400, #98a2b3);
+  color: #98a2b3;
   text-align: center;
   font-size: 12px;
   font-style: normal;
@@ -597,13 +597,11 @@ main {
   padding: 10px;
 }
 .calendar .day {
-  margin-left: -1px;
-  margin-top: -1px;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  color: var(--Gray-400, #98a2b3);
+  color: #98a2b3;
   border: 1px solid #dee2e6;
   background-color: #fff;
   padding: 5px 20px 40px 20px;
@@ -613,14 +611,41 @@ main {
 }
 .calendar .day.empty {
   cursor: default;
-  color: var(--Gray-200, #eaecf0);
+  color: #eaecf0;
 }
 .calendar .day.empty:hover {
   background: #fff;
 }
 .calendar .day.selected {
-  background: var(--Blue-50, #eff8ff);
-  color: var(--Blue-800, #1849a9);
+  background: #eff8ff;
+  color: #1849a9;
+}
+.calendar .day.active {
+  background: #1570ef;
+  color: #fff;
+  border: 1px solid #1570ef;
+}
+.calendar .day.active::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #175CD3;
+  border-radius: 50%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.calendar .day.active::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #2E90FA;
+  border-radius: 50%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .calendar .day.selected::after {
   content: "";
@@ -645,7 +670,8 @@ main {
   transform: translate(-50%, -50%);
 }
 .calendar .day:hover {
-  background: var(--Blue-100, #d1e9ff);
+  background: #d1e9ff;
+  border: 1px solid #1570ef;
 }
 
 .finish {
@@ -665,8 +691,8 @@ main {
   justify-content: center;
   gap: 8px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #d0d5dd);
-  background: var(--White, #fff);
+  border: 1px solid #d0d5dd;
+  background: #fff;
   /* Shadow/xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
@@ -674,7 +700,7 @@ main {
   margin: 0px 0px 40px 0px;
 }
 .finish .time {
-  color: var(--Blue-600, #1570ef);
+  color: #1570ef;
   text-align: center;
   /* Text sm/Semibold */
   font-family: Inter;
@@ -684,7 +710,7 @@ main {
   line-height: 20px; /* 142.857% */
 }
 .finish p {
-  color: var(--Gray-500, #667085);
+  color: #667085;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -693,7 +719,7 @@ main {
 }
 .finish .title {
   margin: 0px 0px 16px 0px;
-  color: var(--Gray-700, #344054);
+  color: #344054;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -733,7 +759,7 @@ main {
   align-items: center;
   padding: 24px;
   width: 480px;
-  border: 1px solid var(--Gray-200, #eaecf0);
+  border: 1px solid #eaecf0;
 }
 .finish.active {
   display: flex;
