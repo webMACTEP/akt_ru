@@ -4,11 +4,22 @@
   }
 }
 @media (max-width: 789px) {
+  .calendar-wrapp .navigation {
+    padding: 24px 0px 16px 0px;
+  }
+  .calendar-wrapp .c-body .mob {
+    display: block;
+    margin: 16px 0px 0px 0px;
+  }
+  .calendar-wrapp .navigation .nav h3 {
+    display: none;
+  }
   .header .saga .info {
     display: none;
   }
   .content {
     padding: 16px;
+    gap: 16px;
   }
   .calendar-wrapp {
     flex-direction: column;

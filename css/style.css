@@ -393,6 +393,14 @@ main {
 .calendar-wrapp .c-body {
   width: 100%;
 }
+.calendar-wrapp .c-body .mob {
+  color: var(--Gray-900, #101828);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  display: none;
+}
 .calendar-wrapp .navigation {
   padding: 40px 0px 24px 0px;
   display: flex;
@@ -486,14 +494,14 @@ main {
   font-weight: 600;
   margin: 0px 0px 16px 0px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #D0D5DD);
-  background: var(--White, #FFF);
+  border: 1px solid var(--Gray-300, #d0d5dd);
+  background: var(--White, #fff);
   padding: 10px 16px;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   cursor: pointer;
 }
 .calendar-wrapp .info .meeting-form .create-meeting {
-  background-color: #1570EF;
+  background-color: #1570ef;
   color: white;
   border: none;
   padding: 10px;
