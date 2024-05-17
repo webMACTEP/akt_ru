@@ -499,6 +499,7 @@ main {
 .calendar-wrapp .info .meeting-form .add-guests {
   text-align: center;
   font-weight: 600;
+  min-width: 260px;
   margin: 0px 0px 16px 0px;
   border-radius: 8px;
   border: 1px solid var(--Gray-300, #d0d5dd);
@@ -530,6 +531,7 @@ main {
 }
 .calendar-wrapp .info section ul li {
   cursor: pointer;
+  min-width: 260px;
   padding: 10px 16px;
   text-align: center;
   border-radius: 8px;
