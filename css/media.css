@@ -4,6 +4,21 @@
   }
 }
 @media (max-width: 789px) {
+  .calendar-wrapp .info .s01 {
+    display: none !important;
+  }
+  .calendar-wrapp {
+    gap: 0;
+  }
+  .calendar-wrapp .info {
+    max-width: 100%;
+  }
+  .calendar-wrapp .info {
+    border-left: none;
+  }
+  .content .head {
+    padding: 16px;
+  }
   .calendar-wrapp .navigation {
     padding: 24px 0px 16px 0px;
   }
