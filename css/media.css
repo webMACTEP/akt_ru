@@ -4,6 +4,13 @@
   }
 }
 @media (max-width: 789px) {
+  .calendar .day.selected::before,
+  .calendar .day.selected::after {
+    display: none;
+  }
+  .calendar .day {
+    padding: 16px 12px;
+  }
   .calendar-wrapp .info {
     padding: 0px 0px 0px 0px;
   }
