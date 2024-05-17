@@ -4,6 +4,9 @@
   }
 }
 @media (max-width: 789px) {
+  .calendar-wrapp .info section.active {
+    margin: 32px 0px 0px 0px;
+  }
   .calendar .day.selected::before,
   .calendar .day.selected::after {
     display: none;
