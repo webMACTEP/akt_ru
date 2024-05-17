@@ -816,6 +816,66 @@
             </div>
           </div>
         </div>
+        <div class="finish">
+          <section class="top">
+            <div class="ico">
+              <svg
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="56" height="56" rx="12" fill="#ECFDF3" />
+                <path
+                  d="M37.3333 21L24.5 33.8333L18.6666 28"
+                  stroke="#039855"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="title">Встреча создана!</div>
+            <p>Мы отправили письмо с подтверждение на ваш емейл</p>
+          </section>
+          <section class="bottom">
+            <div class="avatar">
+              <div class="photo">
+                <img src="img/avatar.jpg" alt="" />
+              </div>
+              <div class="logo">
+                <img src="img/gazprom.svg" alt="" />
+              </div>
+            </div>
+            <div class="time">9 февраля, 15:00 - 16:00 (UTC+3)</div>
+            <div class="info">
+              <div class="title">Встреча с Алексом по поводу Storm Chess</div>
+              <p>
+                Обсуждаем, как получить $5 млн, и чтобы за это ничего не было
+                это важно
+              </p>
+            </div>
+            <div class="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none"
+              >
+                <path
+                  d="M13.8333 1.66675V5.00008M7.16667 1.66675V5.00008M3 8.33342H18M4.66667 3.33341H16.3333C17.2538 3.33341 18 4.07961 18 5.00008V16.6667C18 17.5872 17.2538 18.3334 16.3333 18.3334H4.66667C3.74619 18.3334 3 17.5872 3 16.6667V5.00008C3 4.07961 3.74619 3.33341 4.66667 3.33341Z"
+                  stroke="#344054"
+                  stroke-width="1.67"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Перейти в календарь
+            </div>
+          </section>
+        </div>
       </div>
       <div class="footer-nav">
         <section class="e01 active">
@@ -867,6 +927,19 @@
           }
         });
       }
+
+      // Добавление обработчика события для кнопки "Создать встречу"
+      document
+        .querySelector(".create-meeting")
+        .addEventListener("click", (event) => {
+          const content = document.querySelector(".content");
+          const finish = document.querySelector(".finish");
+
+          if (content && finish) {
+            content.classList.add("hidden");
+            finish.classList.add("active");
+          }
+        });
     </script>
   </body>
 </html>

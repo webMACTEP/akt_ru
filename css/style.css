@@ -324,6 +324,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+.content.hidden {
+  display: none;
+}
 .content .head {
   padding: 24px;
   border-bottom: 4px solid rgb(105, 65, 198);
@@ -643,4 +646,95 @@ main {
 }
 .calendar .day:hover {
   background: var(--Blue-100, #d1e9ff);
+}
+
+.finish {
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  padding: 40px;
+  display: none;
+  width: 100%;
+}
+.finish .button {
+  padding: 10px 16px;
+  font-weight: 600;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-300, #d0d5dd);
+  background: var(--White, #fff);
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.finish .ico {
+  margin: 0px 0px 40px 0px;
+}
+.finish .time {
+  color: var(--Blue-600, #1570ef);
+  text-align: center;
+  /* Text sm/Semibold */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+.finish p {
+  color: var(--Gray-500, #667085);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.finish .title {
+  margin: 0px 0px 16px 0px;
+  color: var(--Gray-700, #344054);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+}
+.finish .bottom {
+  gap: 16px;
+}
+.finish .bottom .title {
+  margin: 0px 0px 8px 0px;
+}
+.finish .bottom .avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.finish .bottom .avatar .logo {
+  margin: -16px 0px -8px 0px;
+}
+.finish .bottom .avatar .logo img {
+  width: 32px;
+  height: 32px;
+}
+.finish .bottom .avatar .photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.finish .bottom,
+.finish .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  width: 480px;
+  border: 1px solid var(--Gray-200, #eaecf0);
+}
+.finish.active {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

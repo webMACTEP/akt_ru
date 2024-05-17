@@ -4,6 +4,9 @@
   }
 }
 @media (max-width: 789px) {
+  .finish .bottom, .finish .top {
+    width: 100%;
+  }
   .calendar-wrapp .info section.active {
     margin: 32px 0px 0px 0px;
   }
