@@ -396,6 +396,7 @@ main {
 .calendar-wrapp .navigation {
   padding: 40px 0px 24px 0px;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -455,7 +456,7 @@ main {
   line-height: 38px; /* 126.667% */
 }
 .calendar-wrapp .info {
-  width: 492px;
+  max-width: 350px;
   padding: 40px;
   border-left: 1px solid var(--Gray-200, #eaecf0);
 }
