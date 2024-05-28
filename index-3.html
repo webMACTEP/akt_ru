@@ -598,15 +598,77 @@
             <div class="change">Сменить план!</div>
           </div>
         </div>
-        <div class="content mainpage">
+        <div class="content">
           <div class="head">
-            <div class="avatar">
-              <img src="img/avatar.jpg" alt="" />
-            </div>
             <div class="info">
-              <div class="name">
-                <span>Иван Иванов</span>
-                <div class="edit">
+              <div class="time">60 минут</div>
+              <div class="title">Встреча с Алексом по поводу Storm Chess</div>
+              <div class="subtitle">
+                Обсуждаем, как получить $5 млн, и чтобы за это ничего не было
+                это важно
+              </div>
+            </div>
+
+            <div class="client-db">
+              <a class="logo-client" href="#">
+                <img src="img/gazprom.svg" alt="" />
+              </a>
+              <div class="client-info">
+                <div class="title">Gazprom</div>
+                <div class="subtitle">Meeting</div>
+              </div>
+            </div>
+          </div>
+          <div class="calendar-wrapp">
+            <div class="c-body">
+              <h3 class="mob">
+                <span class="month">Февраль</span>,
+                <span class="year">2024</span>
+              </h3>
+              <div class="navigation">
+                <div class="nav">
+                  <h3 class="dtop">
+                    <span class="month">Февраль</span>,
+                    <span class="year">2024</span>
+                  </h3>
+                  <div class="butt prew">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M12.5 15L7.5 10L12.5 5"
+                        stroke="#344054"
+                        stroke-width="1.67"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="butt next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.5 15L12.5 10L7.5 5"
+                        stroke="#344054"
+                        stroke-width="1.67"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="butt-today">Сегодня</div>
+                </div>
+                <div class="butt-utc">
+                  UTC +3
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
@@ -615,20 +677,142 @@
                     fill="none"
                   >
                     <path
-                      d="M10 16.6667H17.5M13.75 2.91669C14.0815 2.58517 14.5312 2.39893 15 2.39893C15.2321 2.39893 15.462 2.44465 15.6765 2.53349C15.891 2.62233 16.0858 2.75254 16.25 2.91669C16.4142 3.08085 16.5444 3.27572 16.6332 3.4902C16.722 3.70467 16.7678 3.93455 16.7678 4.16669C16.7678 4.39884 16.722 4.62871 16.6332 4.84319C16.5444 5.05766 16.4142 5.25254 16.25 5.41669L5.83333 15.8334L2.5 16.6667L3.33333 13.3334L13.75 2.91669Z"
-                      stroke="#98A2B3"
-                      stroke-width="2"
+                      d="M5 7.5L10 12.5L15 7.5"
+                      stroke="#344054"
+                      stroke-width="1.67"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                   </svg>
                 </div>
               </div>
-              <div class="mail"><a href="">Ivan.vano@gazprom.ru</a></div>
-              <div class="about">
-                Proin ut finibus nunc, vel egestas mi. Proin lobortis augue ut
-                lorem dignissim, quis
+              <div class="dates">
+                <div class="calendar">
+                  <div class="day-name">Mon</div>
+                  <div class="day-name">Tue</div>
+                  <div class="day-name">Wed</div>
+                  <div class="day-name">Thu</div>
+                  <div class="day-name">Fri</div>
+                  <div class="day-name">Sat</div>
+                  <div class="day-name">Sun</div>
+
+                  <div class="day empty">28</div>
+                  <div class="day empty">29</div>
+                  <div class="day empty">30</div>
+                  <div class="day empty">31</div>
+                  <div class="day">1</div>
+                  <div class="day">2</div>
+                  <div class="day">3</div>
+                  <div class="day">4</div>
+                  <div class="day">5</div>
+                  <div class="day">6</div>
+                  <div class="day selected">7</div>
+                  <div class="day selected">8</div>
+                  <div class="day">9</div>
+                  <div class="day">10</div>
+                  <div class="day">11</div>
+                  <div class="day">12</div>
+                  <div class="day">13</div>
+                  <div class="day">14</div>
+                  <div class="day">15</div>
+                  <div class="day">16</div>
+                  <div class="day active">17</div>
+                  <div class="day">18</div>
+                  <div class="day">19</div>
+                  <div class="day">20</div>
+                  <div class="day">21</div>
+                  <div class="day">22</div>
+                  <div class="day">23</div>
+                  <div class="day">24</div>
+                  <div class="day">25</div>
+                  <div class="day">26</div>
+                  <div class="day">27</div>
+                  <div class="day">28</div>
+                  <div class="day">29</div>
+                  <div class="day">30</div>
+                  <div class="day empty">1</div>
+                </div>
               </div>
+            </div>
+            <div class="info">
+              <section class="s01 active">
+                <div class="img">
+                  <svg
+                    width="56"
+                    height="56"
+                    viewBox="0 0 56 56"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="56" height="56" rx="12" fill="#1570EF" />
+                    <path
+                      d="M32.6667 16.3334V21M23.3333 16.3334V21M17.5 25.6667H38.5M19.8333 18.6667H36.1667C37.4553 18.6667 38.5 19.7114 38.5 21V37.3334C38.5 38.622 37.4553 39.6667 36.1667 39.6667H19.8333C18.5447 39.6667 17.5 38.622 17.5 37.3334V21C17.5 19.7114 18.5447 18.6667 19.8333 18.6667Z"
+                      stroke="white"
+                      stroke-width="2.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="title">Выберите свободную дату</div>
+                <p>
+                  Пожалуйста, выберите подходящий день для встречи, а затем -
+                  временной слот
+                </p>
+              </section>
+              <section class="s02">
+                <div class="title">Выберите время</div>
+                <div class="subtitle">60 минут</div>
+                <ul>
+                  <li>12:00 - 13:00</li>
+                  <li>13:00 - 14:00</li>
+                  <li>14:00 - 15:00</li>
+                  <li class="active">15:00 - 16:00</li>
+                  <li>16:00 - 17:00</li>
+                  <li>18:00 - 19:00</li>
+                  <li>19:00 - 20:00</li>
+                  <li>20:00 - 21:00</li>
+                </ul>
+              </section>
+              <section class="s03">
+                <div class="title">Создать встречу</div>
+                <div class="subtitle">9 февраля, 15:00 - 16:00 (UTC+3)</div>
+                <form class="meeting-form">
+                  <label for="name">Ваше имя</label>
+                  <input type="text" id="name" name="name" placeholder="Иван" />
+
+                  <label for="participants">Участники встречи</label>
+                  <input
+                    type="email"
+                    id="participants"
+                    name="participants"
+                    placeholder="example@gmail.com"
+                  />
+                  <input
+                    type="email"
+                    id="participants"
+                    name="participants"
+                    placeholder="example@gmail.com"
+                  />
+
+                  <button type="button" class="add-guests">
+                    Добавить гостей
+                  </button>
+
+                  <label for="description">Описание встречи</label>
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    placeholder="Пожалуйста, поделитесь всем, что поможет подготовиться к нашей встрече."
+                  ></textarea>
+
+                  <button type="submit" class="create-meeting">
+                    Создать встречу
+                  </button>
+                </form>
+                <div class="change-time">Изменить время</div>
+              </section>
             </div>
           </div>
         </div>
