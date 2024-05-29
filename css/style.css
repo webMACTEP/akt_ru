@@ -768,7 +768,8 @@ main {
 .content.mainpage {
   padding: 0px 0px 0px 0px;
 }
-.content.mainpage .popup1 {
+.content.mainpage .popups {
+  z-index: 999;
   position: absolute;
   top: -62px;
   left: -57px;
@@ -776,14 +777,21 @@ main {
   background: var(--Gray-900, #101828);
   padding: 12px;
   color: var(--White, #fff);
-  /* Text xs/Regular */
-  font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
 }
-.content.mainpage .popup1::after {
+.content.mainpage .popups.bott {
+  top: auto;
+  bottom: -38px;
+}
+.content.mainpage .popups.bott::after {
+  right: 50%;
+  bottom: auto;
+  top: -3px;
+}
+.content.mainpage .popups::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -793,7 +801,7 @@ main {
   background: #101828;
   transform: rotate(45deg);
 }
-.content.mainpage .popup1 span {
+.content.mainpage .popups span {
   font-weight: 600;
 }
 .content.mainpage .items {
@@ -802,6 +810,7 @@ main {
   gap: 24px;
 }
 .content.mainpage .items .item {
+  position: relative;
   display: flex;
   padding: 24px;
   flex-direction: column;
