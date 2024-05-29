@@ -768,6 +768,34 @@ main {
 .content.mainpage {
   padding: 0px 0px 0px 0px;
 }
+.content.mainpage .popup1 {
+  position: absolute;
+  top: -62px;
+  left: -57px;
+  border-radius: 8px;
+  background: var(--Gray-900, #101828);
+  padding: 12px;
+  color: var(--White, #fff);
+  /* Text xs/Regular */
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+.content.mainpage .popup1::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  right: 20px;
+  bottom: -3px;
+  background: #101828;
+  transform: rotate(45deg);
+}
+.content.mainpage .popup1 span {
+  font-weight: 600;
+}
 .content.mainpage .items {
   display: flex;
   flex-wrap: wrap;
@@ -955,6 +983,7 @@ main {
   gap: 8px;
 }
 .content.mainpage .dashboard {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
