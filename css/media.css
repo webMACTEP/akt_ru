@@ -8,6 +8,39 @@
   }
 }
 @media (max-width: 789px) {
+  .content.tippage .left .form-group.colors {
+    display: none;
+  }
+  .content.tippage .right .form-group .time-select {
+    width: 100%;
+  }
+  .content.tippage .right .form-group .time-select select {
+    width: 50%;
+  }
+  .content.tippage .right .form-group label {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .content.tippage .right .schedule-form {
+    padding: 0px 0px 0px 0px;
+  }
+  .content.tippage .wrapper {
+    gap: 16px;
+  }
+  .content.tippage .head .title {
+    font-size: 24px;
+  }
+  .content.tippage .head {
+    padding: 0px 0px 0px 0px;
+  }
+  .content.tippage .left,
+  .content.tippage .right {
+    width: 100%;
+  }
+  .content.tippage .forms {
+    flex-direction: column;
+  }
   .content.mainpage .popups::after {
     right: 50%;
   }
