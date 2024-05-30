@@ -8,6 +8,9 @@
   }
 }
 @media (max-width: 789px) {
+  .content.tippage .left .form-actions {
+    display: none;
+  }
   .content.tippage .left .form-group.colors {
     display: none;
   }
@@ -40,6 +43,7 @@
   }
   .content.tippage .forms {
     flex-direction: column;
+    gap: 0;
   }
   .content.mainpage .popups::after {
     right: 50%;
