@@ -886,7 +886,7 @@
           <div class="wrapper">
             <div class="dashboard">
               <div class="left">
-                <div class="popups">
+                <div class="popups top">
                   <span>Скопировали!</span>
                   <p>Мы скопировали ссылку на все варианты встреч с вами</p>
                 </div>
@@ -1592,6 +1592,33 @@
             finish.classList.add("active");
           }
         });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const linkButton = document.querySelector(
+          ".content.mainpage .left .link"
+        );
+        const popupTop = document.querySelector(
+          ".content.mainpage .popups.top"
+        );
+
+        if (linkButton && popupTop) {
+          linkButton.addEventListener("click", function () {
+            popupTop.classList.toggle("active");
+          });
+        }
+        const linkButton2 = document.querySelector(
+          ".content.mainpage .items .item .dashbrd .link"
+        );
+        const popupTop2 = document.querySelector(
+          ".content.mainpage .popups.bott"
+        );
+
+        if (linkButton2 && popupTop2) {
+          linkButton2.addEventListener("click", function () {
+            popupTop2.classList.toggle("active");
+          });
+        }
+      });
     </script>
   </body>
 </html>
