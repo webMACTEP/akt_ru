@@ -1,10 +1,95 @@
+.content.mainpage .right .calendars .mob {
+  display: none;
+}
+
 @media (max-width: 1276px) {
   .sidebar {
     display: none;
   }
 }
 @media (max-width: 789px) {
-  .finish .bottom, .finish .top {
+  .content.mainpage .popups::after {
+    right: 50%;
+  }
+  .content.mainpage .popups {
+    left: 0;
+  }
+  .content.mainpage .right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .content.mainpage .right .calendars .dtop {
+    display: none;
+  }
+  .content.mainpage .right .calendars .mob {
+    display: block;
+  }
+  .content.mainpage .dashboard {
+    gap: 16px;
+  }
+  .content.mainpage .left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .content.mainpage .left .info {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    font-size: 0;
+  }
+  .content.mainpage .left .info::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../img/icon/alert-circle.svg") no-repeat;
+  }
+  .content.mainpage {
+    gap: 0;
+  }
+  .content.mainpage .about {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  .content.mainpage .mail a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .content.mainpage .name {
+    justify-content: space-between;
+  }
+  .content.mainpage .name span {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+  }
+  .content.mainpage .avatar img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--White, #fff);
+  }
+  .content.mainpage .head {
+    align-items: flex-start;
+    padding: 16px;
+  }
+  .content.mainpage .items .item {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .content.mainpage .items,
+  .content.mainpage .dashboard {
+    flex-direction: column;
+  }
+  .content.mainpage .wrapper {
+    padding: 16px;
+  }
+  .finish .bottom,
+  .finish .top {
     width: 100%;
   }
   .calendar-wrapp .info section.active {
