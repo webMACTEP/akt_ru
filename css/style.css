@@ -1050,19 +1050,23 @@ main {
   box-shadow: none;
 }
 
+.content.manage .right,
 .content.tippage .right {
   width: 48%;
 }
+.content.manage .right .schedule-form,
 .content.tippage .right .schedule-form {
   width: 100%;
   padding: 0px 100px 0px 0px;
 }
+.content.manage .right .form-group,
 .content.tippage .right .form-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
 }
+.content.manage .right .form-group label,
 .content.tippage .right .form-group label {
   display: flex;
   align-items: center;
@@ -1074,13 +1078,16 @@ main {
   line-height: 20px;
   min-width: 100%;
 }
+.content.manage .right .form-group input[type=checkbox],
 .content.tippage .right .form-group input[type=checkbox] {
   margin-right: 10px;
 }
+.content.manage .right .form-group .time-select,
 .content.tippage .right .form-group .time-select {
   display: flex;
   justify-content: center;
 }
+.content.manage .right .form-group .time-select select,
 .content.tippage .right .form-group .time-select select {
   color: #344054;
   font-size: 14px;
@@ -1093,26 +1100,33 @@ main {
   background: #fff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
+.content.manage .right .form-group .time-select select:nth-child(2),
 .content.tippage .right .form-group .time-select select:nth-child(2) {
   border-radius: 0px 8px 8px 0px;
   margin-left: -1px;
 }
+.content.manage .right .form-group .time-select select:first-child,
 .content.tippage .right .form-group .time-select select:first-child {
   border-radius: 8px 0px 0px 8px;
 }
+.content.manage .right .form-group .time-select.disabled,
 .content.tippage .right .form-group .time-select.disabled {
   background: #f2f4f7;
   border-radius: 8px;
 }
+.content.manage .left,
 .content.tippage .left {
   width: 48%;
 }
+.content.manage .left .schedule-form,
 .content.tippage .left .schedule-form {
   width: 100%;
 }
+.content.manage .left .form-group,
 .content.tippage .left .form-group {
   margin-bottom: 16px;
 }
+.content.manage .left .form-group label,
 .content.tippage .left .form-group label {
   display: block;
   margin-bottom: 6px;
@@ -1122,6 +1136,9 @@ main {
   font-weight: 500;
   line-height: 20px;
 }
+.content.manage .left .form-group input,
+.content.manage .left .form-group select,
+.content.manage .left .form-group textarea,
 .content.tippage .left .form-group input,
 .content.tippage .left .form-group select,
 .content.tippage .left .form-group textarea {
@@ -1133,14 +1150,17 @@ main {
   background: #fff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
+.content.manage .left .form-group textarea,
 .content.tippage .left .form-group textarea {
   resize: vertical;
 }
+.content.manage .left .color-picker,
 .content.tippage .left .color-picker {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
+.content.manage .left .color-picker .color-option,
 .content.tippage .left .color-picker .color-option {
   width: 61px;
   height: 61px;
@@ -1150,9 +1170,11 @@ main {
   /* Shadow/md */
   box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
 }
+.content.manage .left .color-picker .color-option.selected,
 .content.tippage .left .color-picker .color-option.selected {
   position: relative;
 }
+.content.manage .left .color-picker .color-option.selected::after,
 .content.tippage .left .color-picker .color-option.selected::after {
   content: "";
   width: 24px;
@@ -1162,51 +1184,67 @@ main {
   top: 14px;
   background: url("../img/check.svg");
 }
+.content.manage .left .color-picker .color-option:nth-child(1),
 .content.tippage .left .color-picker .color-option:nth-child(1) {
   background-color: #6b7280;
 }
+.content.manage .left .color-picker .color-option:nth-child(2),
 .content.tippage .left .color-picker .color-option:nth-child(2) {
   background-color: #8b5cf6;
 }
+.content.manage .left .color-picker .color-option:nth-child(3),
 .content.tippage .left .color-picker .color-option:nth-child(3) {
   background-color: #ef4444;
 }
+.content.manage .left .color-picker .color-option:nth-child(4),
 .content.tippage .left .color-picker .color-option:nth-child(4) {
   background-color: #f97316;
 }
+.content.manage .left .color-picker .color-option:nth-child(5),
 .content.tippage .left .color-picker .color-option:nth-child(5) {
   background-color: #10b981;
 }
+.content.manage .left .color-picker .color-option:nth-child(6),
 .content.tippage .left .color-picker .color-option:nth-child(6) {
   background-color: #3b82f6;
 }
+.content.manage .left .color-picker .color-option:nth-child(7),
 .content.tippage .left .color-picker .color-option:nth-child(7) {
   background-color: #6366f1;
 }
+.content.manage .left .color-picker .color-option:nth-child(8),
 .content.tippage .left .color-picker .color-option:nth-child(8) {
   background-color: #f59e0b;
 }
+.content.manage .left .color-picker .color-option:nth-child(9),
 .content.tippage .left .color-picker .color-option:nth-child(9) {
   background-color: #ec4899;
 }
+.content.manage .left .color-picker .color-option:nth-child(10),
 .content.tippage .left .color-picker .color-option:nth-child(10) {
   background-color: #ef4444;
 }
+.content.manage .left .color-picker .color-option:nth-child(11),
 .content.tippage .left .color-picker .color-option:nth-child(11) {
   background-color: #8b5cf6;
 }
+.content.manage .left .color-picker .color-option:nth-child(12),
 .content.tippage .left .color-picker .color-option:nth-child(12) {
   background-color: #6366f1;
 }
+.content.manage .left .color-picker .color-option:nth-child(13),
 .content.tippage .left .color-picker .color-option:nth-child(13) {
   background-color: #f59e0b;
 }
+.content.manage .left .form-actions,
 .content.tippage .left .form-actions {
   margin: 40px 0px 0px 0px;
   display: flex;
   justify-content: flex-start;
   gap: 12px;
 }
+.content.manage .left .form-actions .cancel-button,
+.content.manage .left .form-actions .submit-button,
 .content.tippage .left .form-actions .cancel-button,
 .content.tippage .left .form-actions .submit-button {
   padding: 10px 16px;
@@ -1217,24 +1255,29 @@ main {
   font-weight: 600;
   line-height: 20px;
 }
+.content.manage .left .form-actions .cancel-button,
 .content.tippage .left .form-actions .cancel-button {
   border: 1px solid #d0d5dd;
   background: #fff;
 }
+.content.manage .left .form-actions .submit-button,
 .content.tippage .left .form-actions .submit-button {
   background: #1570ef;
   color: #ffffff;
 }
+.content.manage .forms,
 .content.tippage .forms {
   display: flex;
   gap: 40px;
   justify-content: space-between;
 }
+.content.manage .head,
 .content.tippage .head {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
+.content.manage .head .title,
 .content.tippage .head .title {
   color: #101828;
   /* Display sm/Semibold */
@@ -1243,6 +1286,7 @@ main {
   font-weight: 600;
   line-height: 38px; /* 126.667% */
 }
+.content.manage .head .bread,
 .content.tippage .head .bread {
   color: #667085;
   /* Text xs/Medium */
@@ -1251,9 +1295,11 @@ main {
   font-weight: 500;
   line-height: 18px;
 }
+.content.manage .head .bread a,
 .content.tippage .head .bread a {
   color: #667085;
 }
+.content.manage .wrapper,
 .content.tippage .wrapper {
   display: flex;
   flex-direction: column;
