@@ -1312,13 +1312,11 @@ main {
   gap: 16px;
 }
 .content.manage .butt-connect {
-  color: var(--Gray-500, #667085);
-  /* Text sm/Semibold */
-  font-family: Inter;
+  color: #667085;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1327,22 +1325,19 @@ main {
 }
 .content.manage .googlecdr {
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #d0d5dd);
-  background: var(--White, #fff);
-  /* Shadow/xs */
+  border: 1px solid #d0d5dd;
+  background: #fff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   display: flex;
   padding: 10px 16px;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  color: var(--Gray-700, #344054);
-  /* Text sm/Semibold */
-  font-family: Inter;
+  color: #344054;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   cursor: pointer;
 }
 .content.manage .connect {
@@ -1350,21 +1345,19 @@ main {
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
-  border: 1px solid var(--Gray-200, #eaecf0);
-  background: var(--White, #fff);
+  border: 1px solid #eaecf0;
+  background: #fff;
   padding: 24px;
 }
 .content.manage .box {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--Gray-700, #344054);
-  /* Text md/Medium */
-  font-family: Inter;
+  color: #344054;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
 }
 .content.manage form {
   display: flex;
@@ -1373,13 +1366,11 @@ main {
 }
 .content.manage .icon {
   min-width: 150px;
-  color: var(--Gray-400, #98a2b3);
-  /* Text md/Medium */
-  font-family: Inter;
+  color: #98a2b3;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1395,28 +1386,27 @@ main {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  color: var(--Gray-500, #667085);
+  color: #667085;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
 }
 .content.manage .mailbutt {
   cursor: pointer;
-  color: var(--Gray-700, #344054);
+  color: #344054;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   display: flex;
   padding: 10px 16px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-300, #d0d5dd);
-  background: var(--White, #fff);
-  /* Shadow/xs */
+  border: 1px solid #d0d5dd;
+  background: #fff;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 .content.manage .top {
@@ -1427,8 +1417,8 @@ main {
 .content.manage .boxes {
   padding: 24px;
   border-radius: 8px;
-  border: 1px solid var(--Gray-100, #f2f4f7);
-  background: var(--White, #fff);
+  border: 1px solid #f2f4f7;
+  background: #fff;
   /* Shadow/sm */
   box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1), 0px 1px 2px 0px rgba(16, 24, 40, 0.06);
   display: flex;
