@@ -1306,6 +1306,11 @@ main {
   gap: 40px;
 }
 
+.content.manage .box-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 .content.manage .butt-connect {
   color: var(--Gray-500, #667085);
   /* Text sm/Semibold */
